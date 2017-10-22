@@ -10,74 +10,67 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 	</head>
 <body>
-	<div class="text-center">
-	<h1>Touch Control</h1>
+	<div class="container text-center">
+	<br>
 	<iframe src="http://YOUR-IP:9000/javascript_simple.html" frameborder="0" align="middle" width="640" height="480" align="middle" scrolling="no"></iframe>
 	<br>
 	<br>
-	<div class="container">
-		<div>
-			<button class="btn-lg btn-success text-center">
-				<i class="fa fa-circle" aria-hidden="true"></i>
-			</button>
-			<button class="btn-lg btn-success" id="t" ontouchstart="forward()" ontouchend="stop(event)">
-				<i class="fa fa-arrow-up" aria-hidden="true"></i>
-			</button>
-			<button class="btn-lg btn-success">
-				<i class="fa fa-circle" aria-hidden="true"></i>
-			</button>
+	<div class="row">
+		<div class="col-lg-6">
+			<div>
+				<button class="btn-lg btn-success text-center">
+					<i class="fa fa-circle" aria-hidden="true"></i>
+				</button>
+				<button class="btn-lg btn-success" id="t" ontouchstart="forward()" ontouchend="stop(event)">
+					<i class="fa fa-arrow-up" aria-hidden="true"></i>
+				</button>
+				<button class="btn-lg btn-success">
+					<i class="fa fa-circle" aria-hidden="true"></i>
+				</button>
+			</div>
+			<div>
+				<button class="btn-lg btn-success" id="l" ontouchstart="left()" ontouchend="stop(event)">
+					<i class="fa fa-arrow-left" aria-hidden="true"></i>
+				</button>
+				<button class="btn-lg btn-success" id="s" ontouchstart="stop(event)" ontouchend="stop(event)">
+					<i class="fa fa-stop-circle-o" aria-hidden="true"></i>
+				</button>
+				<button class="btn-lg btn-success" id="r" ontouchstart="right()" ontouchend="stop(event)">
+					<i class="fa fa-arrow-right" aria-hidden="true"></i>
+				</button>
+			</div>
+			<div>
+				<button class="btn-lg btn-success">
+					<i class="fa fa-circle" aria-hidden="true"></i>
+				</button>
+				<button class="btn-lg btn-success" id="re" ontouchstart="reverse()" ontouchend="stop(event)">
+					<i class="fa fa-arrow-down" aria-hidden="true"></i>
+				</button>
+				<button class="btn-lg btn-success">
+					<i class="fa fa-circle" aria-hidden="true"></i>
+				</button>
+			</div>
 		</div>
-		<div>
-			<button class="btn-lg btn-success" id="l" ontouchstart="left()" ontouchend="stop(event)">
-				<i class="fa fa-arrow-left" aria-hidden="true"></i>
-			</button>
-			<button class="btn-lg btn-success" id="s" ontouchstart="stop(event)" ontouchend="stop(event)">
-				<i class="fa fa-stop-circle-o" aria-hidden="true"></i>
-			</button>
-			<button class="btn-lg btn-success" id="r" ontouchstart="right()" ontouchend="stop(event)">
-				<i class="fa fa-arrow-right" aria-hidden="true"></i>
-			</button>
+		<div class="col-lg-6">
+				<h3>Tilt Angle:</h3>
+				<button class="btn btn-success" onclick="a50()">50</button>
+				<button class="btn btn-success" onclick="a60()">60</button>
+				<button class="btn btn-success" onclick="a85()">85</button>
+				<button class="btn btn-success" onclick="a115()">115</button>
+				<button class="btn btn-success" onclick="a145()">145</button>
+				<br><br>
+				<h3>Pan Position:</h3>
+				<button class="btn btn-success" onclick="leftpan()">Left</button>
+				<button class="btn btn-success" onclick="centerpan()">Center</button>
+				<button class="btn btn-success" onclick="rightpan()">Right</button>
 		</div>
-		<div>
-			<button class="btn-lg btn-success">
-				<i class="fa fa-circle" aria-hidden="true"></i>
-			</button>
-			<button class="btn-lg btn-success" id="re" ontouchstart="reverse()" ontouchend="stop(event)">
-				<i class="fa fa-arrow-down" aria-hidden="true"></i>
-			</button>
-			<button class="btn-lg btn-success">
-				<i class="fa fa-circle" aria-hidden="true"></i>
-			</button>
+		<div class="col-lg-12">
+				<button class="btn btn-success" id="lion" onclick="lighton()">Light On</button>
+				<button class="btn btn-success" id="lioff" onclick="lightoff()">Light Off</button>
 		</div>
 	</div>
-</div>
-
-<br><br><br>
-	<img src="/images/lighton.png" id="lion" onclick="lighton()">
-	<img hspace="20" style="padding-left: 40px" src="/images/lightoff.png" id="lioff" onclick="lightoff()">
-	</div>
-<br><br>
-<div class="text-center">
-<span style="display:inline-block;padding:5px;border:5px solid #f00; font-size: 140%;font-weight: bold;">
-    <button >Camera Pan-Tilt: </button>
-    <br>
-    <button>Tilt Angle:</button>
-    <button onclick="a50()">50</button>
-    <button onclick="a60()">60</button>
-    <button onclick="a85()">85</button>
-    <button onclick="a115()">115</button>
-    <button onclick="a145()">145</button>
-    <br><br>
-    <button>Pan Position:</button>
-    <button onclick="leftpan()">Left</button>
-    <button onclick="centerpan()">Center</button>
-    <button onclick="rightpan()">Right</button>
-</span>
-<br>
 <a href="index-mouse.html" style="font-size: 30px">Mouse Control</a>
 </div>
-
-
 		<!-- SCRIPTS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="js/function.js"></script>
