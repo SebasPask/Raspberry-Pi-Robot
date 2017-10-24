@@ -24,5 +24,16 @@
 
 @media (min-width: 992px) {
   #iframe{
+    /*margin-left: 230px;*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 900px;
+    height: 600px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
   }
 }

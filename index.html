@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 	</head>
 <body>
-	<div class="embed-responsive embed-responsive-16by9">
+	<div class="embed-responsive embed-responsive-16by9 row">
 		<iframe class="embed-responsive-item" id="iframe" src="http://YOUR-IP:9000/javascript_simple.html" frameborder="0" align="middle" width="640" height="480" scrolling="no"></iframe>
 	</div>
 
@@ -19,13 +19,13 @@
 	<div class="row">
 		<div class="col-lg-6 col-md-6">
 			<div>
-				<button class="btn-lg btn-success text-center">
+				<button class="btn-lg btn-success text-center" id="lion" onclick="lighton()">
 					<i class="fa fa-circle" aria-hidden="true"></i>
 				</button>
 				<button class="btn-lg btn-success" id="t" ontouchstart="forward()" ontouchend="stop(event)">
 					<i class="fa fa-arrow-up" aria-hidden="true"></i>
 				</button>
-				<button class="btn-lg btn-success">
+				<button class="btn-lg btn-success" id="lioff" onclick="lightoff()">
 					<i class="fa fa-circle" aria-hidden="true"></i>
 				</button>
 			</div>
@@ -66,8 +66,8 @@
 				<button class="btn btn-success" onclick="rightpan()">Right</button>
 		</div>
 		<div class="col-lg-12">
-				<button class="btn btn-success" id="lion" onclick="lighton()">Light On</button>
-				<button class="btn btn-success" id="lioff" onclick="lightoff()">Light Off</button>
+				<button class="btn btn-success">Light On</button>
+				<button class="btn btn-success">Light Off</button>
 		</div>
 	</div>
 <a href="index-mouse.html" style="font-size: 30px">Mouse Control</a>
