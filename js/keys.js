@@ -1,10 +1,31 @@
 window.onload = function (){
 	window.addEventListener("keydown", checkKeyPress, false);
-	function checkKeyPress(key){
-		if (key.keyCode == "65") {
+  window.addEventListener("keyup", checkKeyUp, false);
+  function checkKeyUp(key){
+		if (key.keyCode == "65"||key.keyCode == "87"||key.keyCode == "83"||key.keyCode == "68") {
+			stop();
+
+		}
+  function checkKeyPress(key){
+		if (key.keyCode == "65") { // A
 			left();
 
 		}
+  function checkKeyPress(key){
+		if (key.keyCode == "87") { // W
+			forward();
+
+		}
+  function checkKeyPress(key){
+    if (key.keyCode == "83") { // S
+      reverse();
+
+    }
+  function checkKeyPress(key){
+    if (key.keyCode == "68") { // D
+      right();
+
+    }
 	}
   var xmlhttp;
 	xmlhttp=new XMLHttpRequest();
