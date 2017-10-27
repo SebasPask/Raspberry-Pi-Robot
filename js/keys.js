@@ -1,30 +1,24 @@
+var A = "65";
+var D = "68";
+var W = "87";
+var S = "83";
 window.onload = function (){
 	window.addEventListener("keydown", checkKeyPress, false);
   window.addEventListener("keyup", checkKeyUp, false);
   function checkKeyUp(key){
 		if (key.keyCode == "65"||key.keyCode == "87"||key.keyCode == "83"||key.keyCode == "68") {
 			stop();
-
 		}
+	}
   function checkKeyPress(key){
-		if (key.keyCode == "65") { // A
+		if (key.keyCode == A) {
 			left();
-
-		}
-  function checkKeyPress(key){
-		if (key.keyCode == "87") { // W
+		} else if (key.keyCode == W) {
 			forward();
-
-		}
-  function checkKeyPress(key){
-    if (key.keyCode == "83") { // S
+		} else if (key.keyCode == S) {
       reverse();
-
-    }
-  function checkKeyPress(key){
-    if (key.keyCode == "68") { // D
+    } else if (key.keyCode == D) {
       right();
-
     }
 	}
   var xmlhttp;
