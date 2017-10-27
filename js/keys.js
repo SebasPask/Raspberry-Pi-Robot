@@ -2,6 +2,18 @@ var A = "65";
 var D = "68";
 var W = "87";
 var S = "83";
+var Q = "81";
+var E = "69";
+var R = "82";
+var T = "84";
+var G = "71";
+var Y = "89";
+var H = "72";
+var U = "85";
+var J = "74";
+var I = "73";
+var K = "75";
+
 window.onload = function (){
 	window.addEventListener("keydown", checkKeyPress, false);
   window.addEventListener("keyup", checkKeyUp, false);
