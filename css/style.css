@@ -24,7 +24,7 @@
 
 @media (min-width: 992px) {
   #iframe{
-    /*margin-left: 230px;*/
+    margin-left: 230px;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 900px;
@@ -36,4 +36,11 @@
 	align-items: stretch;
 	align-content: stretch;
   }
+		.embed-responsive {
+	    position: relative !important;
+	    display: block !important;
+	    width: 69% !important;
+	    padding: 0 !important;
+	    overflow: hidden !important;
+	}
 }

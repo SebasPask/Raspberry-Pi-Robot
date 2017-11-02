@@ -28,13 +28,21 @@ window.onload = function (){
 		} else if (key.keyCode == W) {
 			forward();
 		} else if (key.keyCode == S) {
-      reverse();
-    } else if (key.keyCode == D) {
-      right();
-    }
+     		 reverse();
+    	} else if (key.keyCode == D) {
+      		right();
+    	} else if (key.keyCode == E) {
+      		cameraRight();
+    	}
 	}
   var xmlhttp;
 	xmlhttp=new XMLHttpRequest();
+	function cameraRight()
+	{
+		xmlhttp.open("GET","cgi-bin/servoMotors/scripts/camera-right.py",true);
+		xmlhttp.send();
+		alert('done');
+	}
 	function forward()
 	{
 		xmlhttp.open("GET","cgi-bin/forward.cgi",true);
