@@ -1,6 +1,49 @@
+var xmlhttp;
+var A = "65";
+var D = "68";
+var W = "87";
+var S = "83";
+var Q = "81";
+var E = "69";
+var R = "82";
+var T = "84";
+var G = "71";
+var Y = "89";
+var H = "72";
+var U = "85";
+var J = "74";
+var I = "73";
+var K = "75";
+
 window.onload = function (){
-	var xmlhttp;
-	xmlhttp=new XMLHttpRequest();
+	window.addEventListener("keydown", checkKeyPress, false);
+  window.addEventListener("keyup", checkKeyUp, false);
+  function checkKeyUp(key){
+		if (key.keyCode == "65"||key.keyCode == "87"||key.keyCode == "83"||key.keyCode == "68") {
+			stop();
+		}
+	}
+  function checkKeyPress(key){
+		if (key.keyCode == A) {
+			left();
+		} else if (key.keyCode == W) {
+			forward();
+		} else if (key.keyCode == S) {
+     		 reverse();
+    	} else if (key.keyCode == D) {
+      		right();
+    	} else if (key.keyCode == E) {
+      		cameraRight();
+    	}
+	}
+
+	xmlhttp = new XMLHttpRequest();
+	function cameraRight()
+	{
+		xmlhttp.open("GET","cgi-bin/servoMotors/scripts/simpletest.py",true);
+		xmlhttp.send();
+		alert('done');
+	}
 	function forward()
 	{
 		xmlhttp.open("GET","cgi-bin/forward.cgi",true);

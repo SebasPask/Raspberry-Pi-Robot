@@ -32,115 +32,15 @@ def set_servo_pulse(channel, pulse):
     print('{0}us per bit'.format(pulse_length))
     pulse *= 1000
     pulse //= pulse_length
-    pwm.set_pwm(channel, 2, pulse)
+    pwm.set_pwm(channel, 0, pulse)
 
 # Set frequency to 60hz, good for servos.
 pwm.set_pwm_freq(60)
 
 print('Moving servo on channel 0, press Ctrl-C to quit...')
 while True:
-
-    ######################################
-
-    # Move servo on channel O
+    # Move servo on channel O between extremes.
     pwm.set_pwm(0, 0, servo_min)
     time.sleep(1)
     pwm.set_pwm(0, 0, servo_max)
     time.sleep(1)
-
-    # Move servo on channel 1
-    pwm.set_pwm(1, 0, servo_min)
-    time.sleep(1)
-    pwm.set_pwm(1, 0, servo_max)
-    time.sleep(1)
-
-    # Move servo on channel 2
-    pwm.set_pwm(2, 0, servo_min)
-    time.sleep(1)
-    pwm.set_pwm(2, 0, servo_max)
-    time.sleep(1)
-
-    # Move servo on channel 3
-    pwm.set_pwm(3, 0, servo_min)
-    time.sleep(1)
-    pwm.set_pwm(3, 0, servo_max)
-    time.sleep(1)
-
-    ######################################
-
-    # Move servo on channel 4
-    pwm.set_pwm(4, 0, servo_min)
-    time.sleep(1)
-    pwm.set_pwm(4, 0, servo_max)
-    time.sleep(1)
-
-    # Move servo on channel 5
-    pwm.set_pwm(5, 0, servo_min)
-    time.sleep(1)
-    pwm.set_pwm(5, 0, servo_max)
-    time.sleep(1)
-
-    # Move servo on channel 6
-    pwm.set_pwm(6, 0, servo_min)
-    time.sleep(1)
-    pwm.set_pwm(6, 0, servo_max)
-    time.sleep(1)
-
-    # Move servo on channel 7
-    pwm.set_pwm(7, 0, servo_min)
-    time.sleep(1)
-    pwm.set_pwm(7, 0, servo_max)
-    time.sleep(1)
-
-    ######################################
-
-    # Move servo on channel 8
-    pwm.set_pwm(8, 0, servo_min)
-    time.sleep(1)
-    pwm.set_pwm(8, 0, servo_max)
-    time.sleep(1)
-
-    # Move servo on channel 9
-    pwm.set_pwm(9, 0, servo_min)
-    time.sleep(1)
-    pwm.set_pwm(9, 0, servo_max)
-    time.sleep(1)
-
-    # Move servo on channel 10
-    pwm.set_pwm(10, 0, servo_min)
-    time.sleep(1)
-    pwm.set_pwm(10, 0, servo_max)
-    time.sleep(1)
-
-    # Move servo on channel 11
-    pwm.set_pwm(11, 0, servo_min)
-    time.sleep(1)
-    pwm.set_pwm(11, 0, servo_max)
-    time.sleep(1)
-
-    ######################################
-
-    # Move servo on channel 12
-    pwm.set_pwm(13, 0, servo_min)
-    time.sleep(1)
-    pwm.set_pwm(12, 0, servo_max)
-    time.sleep(1)
-
-    # Move servo on channel 13
-    pwm.set_pwm(13, 0, servo_min)
-    time.sleep(1)
-    pwm.set_pwm(13, 0, servo_max)
-    time.sleep(1)
-
-    # Move servo on channel 14
-    pwm.set_pwm(14, 0, servo_min)
-    time.sleep(1)
-    pwm.set_pwm(14, 0, servo_max)
-    time.sleep(1)
-
-    # Move servo on channel 15
-    pwm.set_pwm(15, 0, servo_min)
-    time.sleep(1)
-    pwm.set_pwm(15, 0, servo_max)
-    time.sleep(1)
-    ######################################
