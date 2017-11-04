@@ -40,7 +40,7 @@ window.onload = function (){
 	xmlhttp = new XMLHttpRequest();
 	function cameraRight()
 	{
-		xmlhttp.open("GET","cgi-bin/servoMotors/scripts/simpletest.py",true);
+		xmlhttp.open("GET","cgi-bin/simpletest.py",true);
 		xmlhttp.send();
 		alert('done');
 	}
